@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 const department = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
@@ -15,4 +15,6 @@ const department = new mongoose.Schema({
     required: false,
   },
 });
-export default mongoose.model('Department', department);
+// export default mongoose.model('Department', department);
+
+module.exports=  mongoose.model('DepartmentPosition', department);

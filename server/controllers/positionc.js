@@ -1,5 +1,7 @@
-import mongoose from 'mongoose';
-import Position from '../models/position';
+//import mongoose from 'mongoose';
+const mongoose = require("mongoose");
+const Position = require("../models/position");
+//import Position from '../models/position';
 
 function createPosition(){
 

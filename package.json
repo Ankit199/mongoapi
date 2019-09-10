@@ -4,10 +4,9 @@
   "description": "mongo nosql db developement ",
   "main": "app.js",
   "scripts": {
-   
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./src -s",
-    "build": "npm run clean && npm run build-babel",
+    "build-babel": "babel -d ./build ./app.js -s",
+    "build": "npm run clean &&  npm run build-babel ",
     "start": "npm run build && node ./build/app.js"
   },
   "engines": {
@@ -24,6 +23,7 @@
   },
   "homepage": "https://github.com/Ankit199/mongoapi#readme",
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.7",
@@ -33,6 +33,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "nodemon": "^1.19.0"
   }

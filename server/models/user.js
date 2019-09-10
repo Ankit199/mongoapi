@@ -1,4 +1,5 @@
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 const user = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
@@ -27,4 +28,5 @@ const user = new mongoose.Schema({
     required: true,
   }
 });
-export default mongoose.model('User', user);
+module.exports=  mongoose.model('User', user);
+//export default mongoose.model('User', user);

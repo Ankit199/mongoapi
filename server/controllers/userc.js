@@ -1,5 +1,8 @@
-import mongoose from "mongoose";
-import User from "../models/user";
+ 'use strict';
+// import mongoose from "mongoose";
+// import User from "../models/user";
+const mongoose = require("mongoose");
+const User  = require("../models/user")
 // import Cause from '../models/cause';
 
 // create new cause

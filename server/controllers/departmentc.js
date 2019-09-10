@@ -1,5 +1,7 @@
-import mongoose from 'mongoose';
-import Department from '../models/department';
+// import mongoose from 'mongoose';
+const mongoose = require("mongoose");
+const Department = require("../models/department");
+//import Department from '../models/department';
 
 function createDepartment(){
 
