@@ -23,7 +23,7 @@ mongoose.connect('mongodb://ankit1992:sba18430ankit@ds125362.mlab.com:25362/ngcr
 });
 routes.configure(app);
 
-app.listen(process.env.PORT || 5035, function (port) {
-  console.log("Our server is running on port " + port);
+app.listen(process.env.PORT || 5035, function () {
+  console.log("Our server is running on port 5035");
 });
 //# sourceMappingURL=app.js.map
