@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
 // set up mongoose
-mongoose.connect('mongodb://ankit1992:sba18430ankit@ds125362.mlab.com:25362/ngcrud',{useNewUrlParser:true})
+mongoose.connect('mongodb://ankit1992:sba18430ankit@ds125362.mlab.com:25362/ngcrud',{useNewUrlParser:true, useUnifiedTopology: true } )
   .then(()=> {
     console.log('Database connected');
   })
