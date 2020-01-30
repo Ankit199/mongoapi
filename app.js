@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 //import logger from 'morgan';
 const logger = require("morgan");
 //import router from './server/routes/route';
-var routes = require('../server/routes/route');
+var routes = require('./server/routes/route');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
